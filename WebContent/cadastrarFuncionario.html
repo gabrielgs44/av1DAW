@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro do Funcionário</title>
+	</head>
+	<body>
+		<h2>Cadastro de Funcionário</h2>
+		
+		<form action="CadastroFuncionario" method="post">
+			<fieldset>
+				<legend>Cadastro de Funcionario</legend>
+				
+				<p><label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" size="30" />
+				</p>
+				
+				<p><label for="cpf"> CPF: </label>
+				<input type="text" name="cpf" id="cpf" size="14" placeholder="000.000.000-00" />
+				</p>
+				
+				<p><label for="dataNasc">Data de nascimento: </label>
+				<input type="date" name="dataNasc" id="dataNasc" />
+				</p>
+				
+				<p><label for="dataAdmissao">Data de Admissão: </label>
+				<input type="date" name="dataAdmissao" id="dataAdmissao" />
+				</p>
+				
+				<input type="submit" value="Cadastrar Funcionario" />
+			</fieldset>
+		</form>
+	</body>
+</html>
