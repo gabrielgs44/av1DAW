@@ -41,5 +41,11 @@ public class Funcionario {
     public void setDataAdmissao(String dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
     }
+    
+    public void cadastrarFuncionario(String nome, String cpf, String dataNasc, String dataAdmissao) {
+        
+        DaoFuncionario daofunc = new DaoFuncionario();
+        daofunc.inserirFuncionario(nome, cpf, dataNasc, dataAdmissao);
+    }
 
 }

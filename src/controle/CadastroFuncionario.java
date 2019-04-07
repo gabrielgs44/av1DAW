@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dominio.DaoFuncionario;
+import dominio.Funcionario;
 
 @WebServlet("/CadastroFuncionario")
 public class CadastroFuncionario extends HttpServlet {
@@ -31,9 +31,8 @@ public class CadastroFuncionario extends HttpServlet {
         
         PrintWriter saida = response.getWriter();
         
-        DaoFuncionario daofunc = new DaoFuncionario();
-        
-        daofunc.inserirFuncionario(nome, cpf, dataNasc, dataAdmissao);
+        Funcionario func = new Funcionario(nome, cpf, dataNasc, dataAdmissao);
+        func.cadastrarFuncionario(nome, cpf, dataNasc, dataAdmissao);
         
         saida.println("<!DOCTYPE html>");
         saida.println("<html lang='pt-br'>");
